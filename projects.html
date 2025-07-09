@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Projects - Daryl Lavin</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/projects-main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Calligraffitti&family=Comic+Relief:wght@400;700&family=Gochi+Hand&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+    <body>
+    <header class="header">
+      <div class="left-side">
+        <a href="index.html">
+          <img class="logo" src="img/logo.png">
+        </a>
+      </div>
+      <div class="middle">
+        <h1 class="nav-name">Daryl Lavin</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html">
+          <button class="nav-button">
+            Home
+          </button>
+        </a>
+        <a href="projects.html">
+          <button class="nav-button" style="text-decoration: underline; font-style: italic;">
+            Projects
+          </button>
+        </a>
+        <a href="music.html">
+          <button class="nav-button">
+            Music
+          </button>
+        </a>
+        <a href="contact.html">
+            <button class="nav-button">
+                Contact
+            </button>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <h1 class="title" id="top">Projects</h1>
+      <div class="projects">
+        <div class="project-box-right" id="dream">
+          <div class="abt-dream">
+            <h2 class="proj-title">Dreamcatcher</h2>
+            <p class="description">
+              DreamCatcher is an innovative project I built with two friends for CMU's 2025 TartanHacks Hackathon. The project aims to decode brainwave activity during sleep into AI-generated videos of dreams, allowing users to visualize and share their dreams. It integrates cutting-edge EEG decoding trained through temporal masking from the Dream Diffusion model, and utilizes CLIP and Stable Diffusion to align EEG signals with text/image vectors and generate visualizations of dreams. It further builds on this by allowing user inputs to extend dream visualizations into AI-generated videos, and provides a social platform for dream-sharing. Additionally, with a short AI analysis of the dream, users will be able to gain insights into their subconscious, providing possible applications in both medical and social fields. 
+            </p>
+            <div class="proj-button-div">
+              <a class="proj-button" href="https://github.com/daryllavin/DreamCatcher">
+                <img class="proj-button-img" src="img/github-full.png">
+              </a>
+              <a class="proj-button" href="https://docs.google.com/presentation/d/e/2PACX-1vQv-Ox7o1XnCBDJH_KHy2K22RHb-jPHNM4Ku4uSdIjuBh5BYPFbK21DE7Lk96jiWzenowcPu0yCPWfd/pub?start=false&loop=false&delayms=3000&slide=id.gdb13e22b57_0_669">
+                <img class="slides-img" src="img/slides.png">
+              </a>
+            </div>
+          </div>
+          <img class="dream-img" src="img/dream.png">
+        </div>
+        <div class="project-box-left" id="lidar">
+          <div>
+            <img class="lidar-img" src="img/walkingdepth.png">
+          </div>
+          <div class="abt-lidar">
+            <h2 class="proj-title">LiDAR Gait Analysis</h2>
+            <p class="description">
+              This is a project I worked on as part of my research at Yale, with an end goal of using the LiDAR recording capability of iPads to analyze gait and to help automate the diagnosis process for Parkinson's and related diseases. I first extensively tested the capabilities of the iPad LiDAR camera, extracting raw depth, camera intrinsics, and rgb data from videos using the StrayScanner app. With this data, I created a program that could create frame-by-frame depth map videos corresponding to the original, as well as 3D point-cloud video recreations, utilizing the OpenCV and Open3d python libraries. Building off the LiDAR data, I incorporated Google's MediaPipe pose estimation model to track joints including the knees, hips, heels, shoulders, elbows, and wrists in the original rgb videos. I then wrote a program to map these points to the LiDAR depth data which led to a novel gait analysis pipeline in which statistics such as arm/knee angle, position, and speed can be tracked over time.
+            </p>
+            <div class="proj-button-div">
+              <a class="proj-button" href="https://github.com/daryllavin/LiDAR-Gait-Analysis">
+                <img class="proj-button-img" src="img/github-full.png">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-right" id="glove">
+          <div class="abt-glove">
+            <h2 class="proj-title">Trioshield Glove</h2>
+            <p>
+              Trioshield Glove is a project I worked on as part of the 2025 Rethink the Rink Make-A-Thon, a partnership program between CMU, the Pittsburgh Penguins, Covestro, and Bauer. As one of the sixteen students selected to participate, my team was tasked to spend one week learning from industry professionals and create a prototype of an improved hockey glove. As a lifelong hockey player, this was a very exciting opportunity as we got to speak with NHL players about their concerns, issues, and ideas, as well as with leading experts in the materials industry from Covestro and Bauer to learn about many different materials that could be put into use. In the process of building our glove, we utilized CAD and Arduino tools to aid in modeling changes and measuring impact on the glove from different forces. In the end, our design decreased wear on the palm of the glove, lowered the weight of the glove, and provided a safer wrist guard, all while being cheaper than the original design. As such, we were able to increase safety and durability while also promoting the accessibility and affordability of hockey, and our designs were licensed for $8k by Covestro at the end of the week.
+            </p>
+            <div class="proj-button-div">
+              <a class="proj-button" href="https://www.youtube.com/watch?v=ZZuWjo7ODVs&list=PLD0Zw95Qr2iExWfOso4gX7sf4_B3sOy7i&index=1">
+                <img class="proj-button-yt" src="img/youtube.png">
+              </a>
+            </div>
+          </div>
+          <a href="https://drive.google.com/file/d/1Kbb6nutjrDz83-Oz3ErltcKFX0_JAMVa/view?usp=sharing">
+            <img class="glove-img" src="img/glove.png">
+          </a>
+        </div>
+        <div class="project-box-left" id="bias">
+          <div>
+            <img class="bias-img" src="img/bias.png">
+          </div>
+          <div class="abt-bias">
+            <h2 class="proj-title">Bias Detection</h2>
+            <p class="bias-desc">
+              This is a research project I worked on with two friends during high school where we implemented machine learning techniques including natural language processing and clustering. We first created a python-based program using Word2vec which took in several biased word pairs and generated numerical values for each word in the corpus for how biased each one is based on the word pairs used to calibrate the model. We then wrote and sent out a survey to hundreds of Gen-Z respondents to obtain word pairs to use to calibrate the model for different categories including race, gender, and income. We then processed and cleaned this data, and ran a K-means clustering algorithm on the results, where we discovered ideas such as social justice issues were prevalent from training with the Gen-Z word pairs. The results from our research were published in the IEEE Access Journal.
+            </p>
+            <div class="right-img-div">
+              <a class="proj-button" href="https://ieeexplore.ieee.org/document/10220079">
+                <img class="proj-button-ieee" src="img/ieee.webp">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-right" id="port">
+          <div class="abt-port">
+            <h2 class="proj-title">Portfolio Website</h2>
+            <p>
+              This portfolio website is a page I created for fun to teach myself HTML and CSS. Despite taking a web design course for a semester in 9th grade, I had forgotten most of my web development skills, but after a few hours of YouTube videos, this website came into fruition. This page was build entirely using HTML and CSS without use of external frameworks or libraries, although I hope to expand it in the future. Although I'm not particularly keen on pursuing any kind of career in web design, I think it's a neat and fun tool to have, and I guess it's always good to have hobbies!
+            </p>
+            <div class="proj-button-div">
+              <a class="proj-button" href="https://github.com/daryllavin/">
+                <img class="proj-button-img" src="img/github-full.png">
+              </a>
+              <a class="proj-button" href="index.html">
+                <h2>Homepage</h2>
+              </a>
+            </div>
+          </div>
+          <div>
+            <img class="port-img" src="img/logo.png">
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="footer">
+          <a href="mailto:daryllavin@gmail.com">
+            <img class="socials-gmail" src="img/gmail.png">
+          </a>
+          <a href="https://www.linkedin.com/in/daryllavin">
+            <img class="socials" src="img/linkedin.png">
+          </a>
+          <a href="https://www.github.com/daryllavin">
+            <img class="socials" src="img/github.png">
+          </a>
+          <a href="https://www.instagram.com/daryllavin/">
+            <img class="socials" src="img/instagram.png">
+          </a>
+          <h1 class="footer-name">Daryl Lavin</h1> 
+        </div>
+      </footer>
+    </body>
+</html>
