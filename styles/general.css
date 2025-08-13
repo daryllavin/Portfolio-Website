@@ -1,0 +1,46 @@
+body {
+    font-family: Roboto;
+    background-color: rgb(220, 212, 235);
+    padding: 0;
+    margin-top: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
+
+main {
+  padding-top: 140px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding-top: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-top: 200px;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.home-main,
+.music-main {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+}

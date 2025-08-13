@@ -1,0 +1,252 @@
+.home-img {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.headshot {
+    width: clamp(150px, 24vw, 400px);
+    height: clamp(150px, 27vw, 550px);
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.info {
+    background-color: rgb(235, 230, 245);
+    border-radius: 10px;
+    width: 80%;
+    align-self: center;
+    padding-left: 20px;
+}
+
+.ed,
+.loc,
+.maj,
+.cal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ed-img,
+.loc-img,
+.books-img {
+    width: 40px;
+    height: 40px;
+}
+
+.plane-img {
+    padding-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.cal-img {
+    width: 35px;
+    height: 35px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 100px;
+}
+
+.info-linkedin {
+    width: 45px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.info-github {
+    width: 57px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.info-gmail {
+    width: 80px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: -5px;
+}
+
+.school,
+.location,
+.major,
+.calendar {
+    margin-left: 10px;
+}
+
+.about {
+    margin-top: -4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5%;
+    padding: 0 1rem; 
+}
+
+@media (max-width: 400px) {
+    .headshot {
+        width: clamp(120px, 40vw, 200px);
+        height: clamp(120px, 40vw, 200px);
+    }
+}
+
+.scroll-down {
+    box-sizing: content-box;
+    max-width: 300px;
+    width: 80%;
+    height: auto;
+    border: none;
+    background-color: rgb(235, 230, 245);
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(127, 92, 152);
+    margin-top: 20px;
+}
+
+.scroll-down:hover,
+.link-button:hover {
+    cursor: pointer;
+    background-color: rgb(187, 167, 223);
+}
+
+.scroll-down:active,
+.link-button:active {
+    background-color: rgb(127, 92, 152);
+}
+
+.down {
+    margin-top: -10px;
+    width: 15%;
+}
+
+.name {
+    font-weight: 450;
+    font-size: clamp(2rem, 12vw, 90px);
+    text-align: center;
+}
+
+.rotate {
+    margin-top: -3rem;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    font-size: clamp(1.2rem, 5vw, 45px);
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative; 
+}
+
+.window {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    animation: slide 25s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.programmer {
+    color: green;
+}
+
+.researcher {
+    color: blue;
+}
+
+.musician {
+    color: red;
+}
+
+.engineer {
+    color: brown;
+}
+
+.student {
+    color: purple;
+}
+
+.builder {
+    color: rgb(113, 113, 3);
+}
+
+.trombonist {
+    color: rgb(255, 140, 0);
+}
+
+.explorer {
+    color: gray;
+}
+
+.intro {
+    font-size: clamp(1rem, 3vw, 25px);
+    text-align: center;
+}
+
+.abt-button {
+    font-size: 30px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: -25px;
+}
+
+.abt-title {
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+.bio{
+    font-size: clamp(1rem, 3vw, 25px);
+    text-align: center;
+    margin-top: 0;
+}
+
+.link-button {
+    box-sizing: content-box;
+    max-width: 300px;
+    width: 90%;
+    height: auto;
+    background-color: rgb(235, 230, 245);
+    border-radius: 20px;
+    padding: 1rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(127, 92, 152);
+    margin-bottom: 20px;
+}
+
+#abt {
+  scroll-margin-top: 150px;
+}

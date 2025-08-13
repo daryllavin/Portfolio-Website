@@ -1,0 +1,339 @@
+.music-main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-div {
+    height: 500px;
+}
+
+.music-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.music-intro {
+    display: grid;
+    grid-template-columns: 30%;
+    text-align: center;
+    margin-left: 5%;
+    flex: 1;
+}
+
+.reach-out {
+    background-color: rgb(235, 230, 245);
+    border: 3px solid rgb(127, 92, 152);
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 50%;
+    margin-top: 8%;
+    padding-left: 5%;
+    border-radius: 20px;
+}
+
+.reach-out:hover {
+  background-color: rgb(190, 170, 224);
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgba(1, 1, 1, 1);
+}
+
+.reach-out:active {
+  background-color: rgb(127, 92, 152);
+}
+
+.gmail-music {
+    width: 70px;
+    height: auto;
+}
+
+.trombone-header {
+    margin-left: 10%;
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    width: 550px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.trombone-img {
+    position: absolute;
+    right: 5%;
+    top: 22%;
+    width: 40%;
+    border-radius: 10%;
+    flex: 1;
+}
+
+.bio-border {
+    margin-top: -15px;
+    width: 150%;
+    background-color: rgb(235, 230, 245);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.music-bio {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.current {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.performance,
+.endeavors {
+    background-color: rgb(235, 230, 245);
+    border-radius: 10px;
+    height: 100%;
+    margin: 15px;
+    padding: 10px;
+}
+
+.endeavors {
+    margin-left: 10%;
+}
+
+.performance {
+    margin-right: 10%;
+}
+
+.recent-header,
+.endeavors-header {
+    text-decoration: underline;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: -5px;
+}
+
+.endeavors-paragraph {
+    padding: 10px;
+    text-align: center;
+    font-family: Roboto;
+    padding-bottom: 0;
+}
+
+.endeavors p,
+.performance p {
+  margin-bottom: -10px;
+}
+
+.recent {
+    font-family: Roboto;
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.holst {
+    margin-top: 10px;
+    width: 60%;
+    height: 60%;
+    border-radius: 30px;
+    margin-left: 20%;
+    border: none;
+    display: block;
+}
+
+.holst:hover {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 1);
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline-title {
+    font-family: Roboto;
+    display: block;
+    text-align: center;
+    font-size: 55px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  .music-main-div {
+    flex-direction: column;
+  }
+
+  .music-intro {
+    flex-direction: column;
+  }
+  
+  .intro-div {
+    flex-direction: column;
+  }
+
+  .music-div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .music-intro {
+    grid-template-columns: 100%;
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .trombone-header {
+    font-size: clamp(1.2rem, 6vw, 2rem);
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    padding: 0 5%;
+  }
+
+  .trombone-img {
+    position: static;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .bio-border {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+
+  .reach-out {
+    margin: 20px auto 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .reach-out h2 {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    text-align: center;
+  }
+
+  .current {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .holst {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .timeline-title {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(144, 144, 144);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(235, 230, 245);
+  border: 4px solid rgb(144, 144, 144);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(193, 241, 247);
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(193, 241, 247) transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: rgb(193, 241, 247);
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
