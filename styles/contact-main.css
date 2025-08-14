@@ -6,7 +6,7 @@
 
 .email {
     text-align: right;
-    margin-top: -4%;
+    margin-top: -3%;
     margin-right: 15%;
     font-size: 30px;;
 }
@@ -72,8 +72,11 @@
 }
 
 .logo-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 3px solid black;
-    height: 100px;
+    height: 120px;
     border-radius: 20px;
     margin: 10px;
     padding: 0;
@@ -99,7 +102,6 @@
 
 .github-full {
     width: 90%;
-    transform: scale(115%);
 }
 
 .instagram-full {

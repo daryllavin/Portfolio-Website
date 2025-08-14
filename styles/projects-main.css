@@ -79,6 +79,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid black;
+    margin-top: 18px;
 }
 
 .proj-button-pdf {

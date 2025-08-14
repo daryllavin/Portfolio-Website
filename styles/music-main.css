@@ -3,33 +3,42 @@
     flex-direction: column;
 }
 
-.intro-div {
-    height: 500px;
+.music-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
 }
 
-.music-div {
-    display: flex;
-    flex-direction: row;
+.trombone-img {
+  margin-top: 25px;
+  flex: 4;
+}
+
+.trombone-img-img {
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 10%;
+  height: auto;
 }
 
 .music-intro {
-    display: grid;
-    grid-template-columns: 30%;
-    text-align: center;
-    margin-left: 5%;
-    flex: 1;
+  display: flex;
+  flex: 5;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .reach-out {
-    background-color: rgb(235, 230, 245);
-    border: 3px solid rgb(127, 92, 152);
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    margin-left: 50%;
-    margin-top: 8%;
-    padding-left: 5%;
-    border-radius: 20px;
+  background-color: rgb(235, 230, 245);
+  border: 3px solid rgb(127, 92, 152);
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-top: 8%;
+  padding-left: 5%;
+  border-radius: 20px;
 }
 
 .reach-out:hover {
@@ -48,73 +57,63 @@
 }
 
 .trombone-header {
-    margin-left: 10%;
-    font-size: clamp(1.5rem, 6vw, 3rem);
-    width: 550px;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.trombone-img {
-    position: absolute;
-    right: 5%;
-    top: 22%;
-    width: 40%;
-    border-radius: 10%;
-    flex: 1;
+  font-size: clamp(1.5rem, 6vw, 3rem);
+  width: 550px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .bio-border {
-    margin-top: -15px;
-    width: 150%;
-    background-color: rgb(235, 230, 245);
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+  margin-top: -15px;
+  width: 80%;
+  background-color: rgb(235, 230, 245);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .music-bio {
-    font-size: 20px;
-    padding: 10px;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .current {
-    display: grid;
-    grid-template-columns: 50% 50%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .performance,
 .endeavors {
-    background-color: rgb(235, 230, 245);
-    border-radius: 10px;
-    height: 100%;
-    margin: 15px;
-    padding: 10px;
+  background-color: rgb(235, 230, 245);
+  border-radius: 10px;
+  height: 100%;
+  margin: 15px;
+  padding: 10px;
 }
 
 .endeavors {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
 .performance {
-    margin-right: 10%;
+  margin-right: 10%;
 }
 
 .recent-header,
 .endeavors-header {
-    text-decoration: underline;
-    font-family: Roboto;
-    text-align: center;
-    font-size: 40px;
-    margin: 0;
-    margin-bottom: -5px;
+  text-decoration: underline;
+  font-family: Roboto;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: -5px;
 }
 
 .endeavors-paragraph {
-    padding: 10px;
-    text-align: center;
-    font-family: Roboto;
-    padding-bottom: 0;
+  padding: 10px;
+  text-align: center;
+  font-family: Roboto;
+  padding-bottom: 0;
 }
 
 .endeavors p,
@@ -123,20 +122,20 @@
 }
 
 .recent {
-    font-family: Roboto;
-    text-align: center;
-    margin: 0;
-    margin-top: 5px;
+  font-family: Roboto;
+  text-align: center;
+  margin: 0;
+  margin-top: 5px;
 }
 
 .holst {
-    margin-top: 10px;
-    width: 60%;
-    height: 60%;
-    border-radius: 30px;
-    margin-left: 20%;
-    border: none;
-    display: block;
+  margin-top: 10px;
+  width: 60%;
+  height: 60%;
+  border-radius: 30px;
+  margin-left: 20%;
+  border: none;
+  display: block;
 }
 
 .holst:hover {
@@ -150,11 +149,11 @@
 }
 
 .timeline-title {
-    font-family: Roboto;
-    display: block;
-    text-align: center;
-    font-size: 55px;
-    text-decoration: underline;
+  font-family: Roboto;
+  display: block;
+  text-align: center;
+  font-size: 55px;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1000px) {
@@ -171,7 +170,7 @@
   }
 
   .music-div {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
   }
