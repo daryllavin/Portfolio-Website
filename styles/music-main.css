@@ -1,3 +1,12 @@
+.music-main {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.trombone-img-mobile {
+  display: none;
+}
+
 .music-main-div {
     display: flex;
     flex-direction: column;
@@ -58,7 +67,7 @@
 
 .trombone-header {
   font-size: clamp(1.5rem, 6vw, 3rem);
-  width: 550px;
+  width: 100%;
   text-align: center;
   text-decoration: underline;
 }
@@ -156,81 +165,6 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1000px) {
-  .music-main-div {
-    flex-direction: column;
-  }
-
-  .music-intro {
-    flex-direction: column;
-  }
-  
-  .intro-div {
-    flex-direction: column;
-  }
-
-  .music-div {
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-  }
-
-  .music-intro {
-    grid-template-columns: 100%;
-    margin-left: 0;
-    width: 90%;
-  }
-
-  .trombone-header {
-    font-size: clamp(1.2rem, 6vw, 2rem);
-    width: 100%;
-    margin-left: 0;
-    text-align: center;
-    padding: 0 5%;
-  }
-
-  .trombone-img {
-    position: static;
-    width: 90%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .bio-border {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 5%;
-  }
-
-  .reach-out {
-    margin: 20px auto 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .reach-out h2 {
-    font-size: clamp(1rem, 5vw, 1.5rem);
-    text-align: center;
-  }
-
-  .current {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .holst {
-    width: 90%;
-    height: auto;
-    margin: 20px auto;
-  }
-
-  .timeline-title {
-    font-size: clamp(1.5rem, 6vw, 2.5rem);
-  }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -310,7 +244,102 @@
   border-radius: 6px;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 480px) {
+  .music-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .trombone-header {
+    font-size: 32px;
+  }
+
+  .music-main-div,
+  .music-div,
+  .music-intro {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .trombone-img {
+    display: none;
+  }
+
+  .trombone-img-mobile {
+    display: block;
+    width: 80%;
+    border-radius: 10%;
+    height: auto;
+  }
+
+  .music-intro {
+    width: 95%;
+    padding: 0 2.5%;
+  }
+
+  .bio-border,
+  .reach-out,
+  .holst {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .music-bio {
+    font-size: 15px;;
+  }
+
+  .reach-out {
+    margin-top: 0;
+    font-size: 15px;
+    padding-left: 5%;
+    width: 100%;
+  }
+
+  .gmail-music {
+      width: 55px;
+      height: auto;
+  }
+
+  .current {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: none;
+    align-items: center;
+  }
+
+  .endeavors,
+  .performance {
+    margin: 0;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .endeavors-header,
+  .recent-header {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .endeavors-paragraph,
+  .recent {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .recent {
+    margin-top: 10px;
+  }
+
+  .timeline-title {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+
   .timeline::after {
     left: 31px;
   }

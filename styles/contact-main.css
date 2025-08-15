@@ -114,3 +114,20 @@
     right: 0;
     left: 0;
 }
+
+@media (max-width: 480px) {
+    .contact {
+        font-size: 50px;
+    }
+
+    .link,
+    .urls {
+        font-size: 25px;
+    }
+
+    .logo-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: -30px;
+    }
+}
