@@ -30,6 +30,7 @@
     width: 80%;
     align-self: center;
     padding-left: 20px;
+    margin-bottom: 10px;
 }
 
 .ed,
@@ -357,5 +358,12 @@
 
     .home-img {
         min-height: 100vh;
+    }
+
+    .info {
+        margin-bottom: 15px;
+    }
+    .abt-title {
+        margin-top: -75px;
     }
 }
