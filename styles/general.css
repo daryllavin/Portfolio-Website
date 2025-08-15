@@ -11,6 +11,16 @@ a, a:link, a:visited, a:hover, a:active {
   white-space: nowrap;
 }
 
+html body a,
+html body a:link,
+html body a:visited,
+html body a:hover,
+html body a:active {
+  color: black !important;
+  -webkit-text-fill-color: black !important;
+  text-decoration: none !important;
+}
+
 header {
   position: sticky;
   top: 0;
