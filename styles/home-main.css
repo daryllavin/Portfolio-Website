@@ -354,4 +354,8 @@
         text-align: center;
         margin-top: 0;
     }
+
+    .home-img {
+        min-height: 100vh;
+    }
 }
