@@ -5,9 +5,10 @@ body {
     margin-top: 0;
 }
 
-a {
+a, a:link, a:visited, a:hover, a:active {
   color: black !important;
   text-decoration: none !important;
+  white-space: nowrap;
 }
 
 header {
