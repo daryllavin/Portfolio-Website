@@ -1,369 +1,110 @@
-.home-main {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
+.hero {
+  padding: 64px 0 0;
 }
 
-.name-mobile,
-.rotate-mobile,
-.scroll-down-mobile,
-.intro-mobile {
-    display: none;
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  align-items: center;
+  gap: 72px;
 }
 
-.home-img {
-    display: flex;
-    flex-direction: column;
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero .lead {
+  max-width: 54ch;
+  margin-bottom: 24px;
+}
+
+.hero-socials {
+  margin-top: 22px;
+}
+
+/* Photo + caption box share one frame */
+.hero-side {
+  overflow: hidden;
+  background: var(--tint);
 }
 
 .headshot {
-    width: clamp(150px, 24vw, 400px);
-    height: clamp(150px, 27vw, 550px);
-    border-radius: 50%;
-    object-fit: cover;
-    align-self: center;
-    margin-top: 10px;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 30%;
 }
 
-.info {
-    background-color: rgb(235, 230, 245);
-    border-radius: 10px;
-    width: 80%;
-    align-self: center;
-    padding-left: 20px;
-    margin-bottom: 10px;
+.facts {
+  margin: 0;
+  padding: 14px 18px;
+  list-style: none;
+  border-top: 2px solid var(--accent-dark);
 }
 
-.ed,
-.loc,
-.maj,
-.cal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.facts > li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.35;
 }
 
-.ed-img,
-.loc-img,
-.books-img {
-    width: 40px;
-    height: 40px;
+.facts img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
-.plane-img {
-    padding-left: 10px;
-    width: 40px;
-    height: 40px;
+.facts .route {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
 }
 
-.cal-img {
-    width: 35px;
-    height: 35px;
+.facts .plane {
+  width: 15px;
+  height: 15px;
 }
 
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 60px;
-    margin-right: 100px;
+#about {
+  margin-top: 72px;
+  border-top: 1px solid var(--rule);
 }
 
-.info-linkedin {
-    width: 45px;
-    border-radius: 5px;
-    margin-left: 30px;
+.about-body {
+  max-width: 68ch;
+  color: var(--text-muted);
 }
 
-.info-github {
-    width: 57px;
-    border-radius: 5px;
-    margin-left: 30px;
+@media (max-width: 860px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero-side {
+    grid-row: 1;
+    max-width: 340px;
+  }
+
+  .headshot {
+    aspect-ratio: 1;
+    object-position: center 25%;
+  }
 }
 
-.info-gmail {
-    width: 80px;
-    border-radius: 5px;
-    margin-left: 15px;
-    margin-right: -5px;
-}
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 32px;
+  }
 
-.school,
-.location,
-.major,
-.calendar {
-    margin-left: 10px;
-}
-
-.about {
-    margin-top: -4%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 5%;
-    padding: 0 1rem; 
-}
-
-.scroll-down {
-    box-sizing: content-box;
-    max-width: 300px;
-    width: 80%;
-    height: auto;
-    border: none;
-    background-color: rgb(235, 230, 245);
-    border-radius: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 1rem;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid rgb(127, 92, 152);
-    margin-top: 4%;
-}
-
-.scroll-down:hover,
-.link-button:hover {
-    cursor: pointer;
-    background-color: rgb(187, 167, 223);
-}
-
-.scroll-down:active,
-.link-button:active {
-    background-color: rgb(127, 92, 152);
-}
-
-.down {
-    margin-top: -10px;
-    width: 50px;
-    height: auto;
-}
-
-.name {
-    font-weight: 450;
-    font-size: clamp(2rem, 12vw, 90px);
-    text-align: center;
-}
-
-.rotate {
-    margin-top: -3rem;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    height: 50px;
-    width: 100%;
-    line-height: 50px;
-    font-size: clamp(1.2rem, 5vw, 45px);
-    text-transform: uppercase;
-    overflow: hidden;
-    position: relative; 
-}
-
-.window {
-    display: inline-block;
-    position: absolute;
-    white-space: nowrap;
-    animation: slide 25s linear infinite;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-.programmer {
-    color: green;
-}
-
-.researcher {
-    color: blue;
-}
-
-.musician {
-    color: red;
-}
-
-.engineer {
-    color: brown;
-}
-
-.student {
-    color: purple;
-}
-
-.builder {
-    color: rgb(113, 113, 3);
-}
-
-.trombonist {
-    color: rgb(255, 140, 0);
-}
-
-.explorer {
-    color: gray;
-}
-
-.intro {
-    font-size: clamp(1rem, 3vw, 25px);
-    text-align: center;
-}
-
-.abt-button {
-    font-size: 30px;
-}
-
-.about-me {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    align-items: center;
-    margin-left: 10%;
-}
-
-.abt-title {
-    text-decoration: underline;
-    font-size: 50px;
-}
-
-.bio{
-    font-size: clamp(1rem, 3vw, 25px);
-    text-align: center;
-    margin-top: 0;
-}
-
-.link-button {
-    box-sizing: content-box;
-    max-width: 300px;
-    width: 90%;
-    height: auto;
-    background-color: rgb(235, 230, 245);
-    border-radius: 20px;
-    padding: 1rem;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid rgb(127, 92, 152);
-    margin-bottom: 20px;
-}
-
-#abt {
-  scroll-margin-top: 175px;
-}
-
-@media (max-width: 480px) {
-    .home-main {
-        display: flex;
-        flex-direction: column;
-        grid-template-columns: none;
-    }
-
-    .name-mobile {
-        display: unset;
-        align-self: center;
-        margin-bottom: 0;
-        margin-top: 10px;
-    }
-
-    .rotate-mobile {
-        display: unset;
-        margin-top: 5px;
-        border-top: 3px solid black;
-        border-bottom: 3px solid black;
-        height: 50px;
-        width: 85%;
-        margin-left: 7.5%;
-        line-height: 50px;
-        font-size: clamp(1.2rem, 5vw, 45px);
-        text-transform: uppercase;
-        overflow: hidden;
-        position: relative; 
-    }
-
-    .name,
-    .rotate,
-    .scroll-down,
-    .intro {
-        display: none;
-    }
-
-    .info {
-        margin: 0;
-        font-size: 14px;
-    }
-
-    .links {
-        margin: 0;
-    }
-
-    .info-linkedin {
-        width: 30px;
-        border-radius: 5px;
-    }
-
-    .info-github {
-        width: 40px;
-        border-radius: 5px;
-    }
-
-    .info-gmail {
-        width: 50px;
-        border-radius: 5px;
-    }
-
-    .scroll-down-mobile {
-        box-sizing: content-box;
-        max-width: 300px;
-        width: 40%;
-        height: auto;
-        background-color: rgb(235, 230, 245);
-        border-radius: 20px;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-self: center;
-        border: 3px solid rgb(127, 92, 152);
-        margin-top: -110px;
-        margin-bottom: 20px;
-    }
-
-    .down {
-        margin-top: -10px;
-        width: 25px;
-        height: auto;
-    }
-
-    .abt-button {
-        font-size: 20px;
-        margin-top: 5px;
-    }
-
-    .abt-title {
-        margin-top: -100px;
-        margin-bottom: 10px;
-    }
-
-    .intro-mobile {
-        display: block;
-        font-size: clamp(1rem, 3vw, 25px);
-        text-align: center;
-        margin-top: 0;
-    }
-
-    .home-img {
-        min-height: 100vh;
-    }
-
-    .info {
-        margin-bottom: 15px;
-    }
-    .abt-title {
-        margin-top: -95px;
-    }
+  #about {
+    margin-top: 48px;
+  }
 }

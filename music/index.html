@@ -1,159 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Music - Daryl Lavin</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="date=no">
-    <meta name="format-detection" content="address=no">
-    <meta name="format-detection" content="email=no">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Daryl Lavin</title>
+    <meta name="description" content="Daryl Lavin, trombonist in the Carnegie Mellon University Trombone Studio.">
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/general.css">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/music-main.css">
     <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="icon" href="/img/logo.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Calligraffitti&family=Comic+Relief:wght@400;700&family=Gochi+Hand&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <div class="left-side">
-        <a href="/">
-          <img class="logo" src="/img/logo.png">
-        </a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="wordmark" href="/"><img src="/img/logo-trim.png" alt=""><span>Daryl Lavin</span></a>
+        <nav class="nav" aria-label="Main">
+          <a href="/">Home</a>
+          <a href="/projects">Projects</a>
+          <a href="/music" aria-current="page">Music<span class="nav-indicator" aria-hidden="true"></span></a>
+          <a href="/contact">Contact</a>
+        </nav>
       </div>
-      <div class="middle">
-        <h1 class="nav-name">Daryl Lavin</h1>
-      </div>
-      <nav class="nav">
-        <a href="/">
-          <button class="nav-button">
-            Home
-          </button>
-        </a>
-        <a href="/projects">
-          <button class="nav-button">
-            Projects
-          </button>
-        </a>
-        <a href="/music">
-          <button class="nav-button"  style="text-decoration: underline; font-style: italic;">
-            Music
-          </button>
-        </a>
-        <a href="/contact">
-            <button class="nav-button">
-                Contact
-            </button>
-        </a>
-      </nav>
     </header>
-    <main class="music-main-div">
-      <div class="music-div">
-        <div class="music-intro">
+    <script src="/scripts/nav-slide.js"></script>
+
+    <main class="music-main">
+      <section class="wrap music-hero">
+        <div>
+          <h1 class="display">Music</h1>
+          <p class="lead">
+            I'm a trombonist in the Carnegie Mellon Trombone Studio, where I study with Pete Sullivan, principal trombone of the Pittsburgh Symphony Orchestra. I grew up in New Canaan, CT, studying with George Sanders, retired associate principal trombone of the Hartford Symphony.
+          </p>
+          <div class="btn-row">
+            <a class="btn" href="mailto:daryllavin@gmail.com"><img src="/img/icon-gmail.png" alt=""><span>Email me</span></a>
+          </div>
+        </div>
+        <img class="music-photo" src="/img/trombone.jpg" alt="Daryl Lavin playing trombone">
+      </section>
+
+      <section class="section" id="performance">
+        <div class="wrap">
+          <h2 class="section-title">Featured performance</h2>
+          <p class="muted performance-caption">
+            Holst's <em>Second Suite in F</em>, which I played as first trombone with the CMU Wind Ensemble.
+          </p>
+          <div class="video">
+            <iframe src="https://www.youtube-nocookie.com/embed/oRm7OAa60Fo" title="Holst Second Suite in F, CMU Wind Ensemble" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap music-grid">
           <div>
-            <h1 class="trombone-header">Daryl Lavin Trombone</h1>
+            <h2 class="section-title">Background</h2>
+            <div class="muted">
+              <p>In high school I was the low brass section leader and drum major of my school band, and played first chair in the regional honors concert and jazz bands. I made the Connecticut All-State Band twice and played first trombone in the NAfME All-Eastern and All-National Symphony Orchestras.</p>
+              <p>I've also played around southwestern Connecticut with the Western CT Youth Orchestra and the Norwalk Youth Symphony, which gave me a full-tuition scholarship. I still play with the New Canaan Town Community Band at town events like fireworks and Christmas carols.</p>
+              <p>During the school year I'm in Pittsburgh, playing in the CMU brass ensemble, Philharmonic, and Wind Ensemble. I'm always happy to play, so feel free to <a href="/contact">reach out</a>.</p>
+            </div>
           </div>
-          <img class="trombone-img-mobile" src="/img/trombone.jpg">
-          <div class="bio-border">
-            <p class="music-bio">
-              I'm Daryl, a musician at Carnegie Mellon University! I am a member of the CMU Trombone Studio and study with Pete Sullivan, principal trombonist of the Pittsburgh Symphony Orchestra. I'm originally from and still live in New Canaan, CT, where I grew up studying with George Sanders -- retired associate principal trombonist of the Hartford Symphony. Scroll down to learn more about my musical journey!
-            </p>
-          </div>
+
           <div>
-            <a href="mailto:daryllavin@gmail.com">
-              <button class="reach-out">Reach Out!
-              <img class="gmail-music" src="/img/gmail.png">
-              </button>
-            </a>
+            <h2 class="section-title">Timeline</h2>
+            <ol class="timeline">
+              <li><span class="year">2024</span><p>Started at Carnegie Mellon and joined the CMU Trombone Studio.</p></li>
+              <li><span class="year">2023</span><p>First chair in the NAfME All-Eastern Symphony Orchestra in Rochester, NY. Drum major for my high school band, conducting two concerts.</p></li>
+              <li><span class="year">2022</span><p>First chair in the NAfME All-National Symphony Orchestra in Washington, D.C. Played in the pit for my first musical, <em>The Little Mermaid</em>.</p></li>
+              <li><span class="year">2021</span><p>Made the Connecticut All-State Band for the first time, playing the first trombone part as third chair.</p></li>
+              <li><span class="year">2017</span><p>Started lessons and made the Western CT Regional Honors Band as a sixth grader, and every year after through high school.</p></li>
+              <li><span class="year">2016</span><p>Picked up the trombone in fifth-grade band.</p></li>
+            </ol>
           </div>
         </div>
-        <div class="trombone-img">
-          <img class="trombone-img-img" src="/img/trombone.jpg">
-        </div>
-      </div>
-      <div class="current">
-        <div class="endeavors">
-          <h1 class="endeavors-header">
-            My Musical Endeavors
-          </h1>
-          <p class="endeavors-paragraph">
-            Throughout my time in high school, I was a very active member of the musical community. I was the low brass section leader and drum major in my high school band, and played first chair in both the regional honors concert band and jazz band. Additionally, I played in the CT All State Band twice, and was first trombonist in the All Eastern and All National Symphony Orchestras. <br /><br /> I also have been an active performer around the southwestern CT area. I played in the Western CT Youth Orchestra and Norwalk Youth Symphony, for which I was awarded a full-tuition scholarship, and am an active member of the New Canaan Town Community Band to this day, playing town events including fireworks, christmas carols, and more. <br /><br />
-            I am now located in Pittsburgh during the academic year where I am in the CMU Trombone Studio. I play in the brass ensemble as well as with the CMU Philharmonic and Wind Ensemble. I'm always excited to play wherever and whenever I can, so feel free to reach out!
-          <p>
-        </div>
-        <div class="performance">
-          <h1 class="recent-header">
-            Featured Performance
-          </h1>
-          <h2 class="recent">
-            Check out my recent performance of Holst's Second Suite in F as first trombonist with the CMU Wind Ensemble!
-          </h2>
-          <iframe class="holst"
-            src="https://www.youtube.com/embed/oRm7OAa60Fo">
-          </iframe>
-        </div>
-      </div>
-      <h1 class="timeline-title">My Trombone Experience</h1>
-      <div class="timeline">
-        <div class="container left">
-          <div class="content">
-            <h2>2016</h2>
-            <p>
-              I first chose to play the trombone in 5th grade when I thought it would be the funniest instrument to play in band class.
-            </p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>2017</h2>
-            <p>
-              I started taking trombone lessons and was accepted to the Western CT Regional Honors band as a 6th grader. I would end up doing so every year from then through the end of high school.
-            </p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content">
-            <h2>2021</h2>
-            <p>
-              I qualified for the CT All State Band for the first time as the third chair trombonist, where I played the first trombone part and was exposed to serious trombonists my age for the first time.
-            </p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>2022</h2>
-            <p>
-              I was accepted to the NAfME All National Symphony Orchestra in Washington DC where I was the first chair trombonist. I also played in the pit for my first ever musical, The Little Mermaid, which was a very cool experience.
-            </p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content">
-            <h2>2023</h2>
-            <p>
-              I played in the NAfME All Eastern Symphony Orchestra in Rochester NY where I was the first chair trombonist. I was also the drum major for my high school band where I conducted pieces in two concerts and led the band throughout the year.
-            </p>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
-    <footer>
-      <div class="footer">
-        <a href="mailto:daryllavin@gmail.com">
-          <img class="socials-gmail" src="/img/gmail.png">
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/daryllavin">
-          <img class="socials" src="/img/linkedin.png">
-        </a>
-        <a target="_blank" href="https://www.github.com/daryllavin">
-          <img class="socials" src="/img/github.png">
-        </a>
-        <a target="_blank" href="https://www.instagram.com/daryllavin/">
-          <img class="socials" src="/img/instagram.png">
-        </a>
-        <h1 class="footer-name">Daryl Lavin</h1> 
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="footer-name">Daryl Lavin</p>
+        <div class="footer-right">
+          <div class="socials">
+            <a href="mailto:daryllavin@gmail.com" aria-label="Email"><img src="/img/gmail.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/daryllavin" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="/img/linkedin.png" alt=""></a>
+            <a href="https://github.com/daryllavin" target="_blank" rel="noopener" aria-label="GitHub"><img src="/img/github.png" alt=""></a>
+            <a href="https://www.instagram.com/daryllavin/" target="_blank" rel="noopener" aria-label="Instagram"><img src="/img/instagram.png" alt=""></a>
+          </div>
+          <p class="credit">Icons by <a href="https://icons8.com" target="_blank" rel="noopener">Icons8</a></p>
+        </div>
       </div>
     </footer>
   </body>

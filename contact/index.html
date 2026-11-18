@@ -1,117 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact - Daryl Lavin</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="date=no">
-    <meta name="format-detection" content="address=no">
-    <meta name="format-detection" content="email=no">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Daryl Lavin</title>
+    <meta name="description" content="Get in touch with Daryl Lavin.">
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/general.css">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/contact-main.css">
     <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="icon" href="/img/logo.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Calligraffitti&family=Comic+Relief:wght@400;700&family=Gochi+Hand&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <div class="left-side">
-        <a href="/">
-          <img class="logo" src="/img/logo.png">
-        </a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="wordmark" href="/"><img src="/img/logo-trim.png" alt=""><span>Daryl Lavin</span></a>
+        <nav class="nav" aria-label="Main">
+          <a href="/">Home</a>
+          <a href="/projects">Projects</a>
+          <a href="/music">Music</a>
+          <a href="/contact" aria-current="page">Contact<span class="nav-indicator" aria-hidden="true"></span></a>
+        </nav>
       </div>
-      <div class="middle">
-        <h1 class="nav-name">Daryl Lavin</h1>
-      </div>
-      <nav class="nav">
-        <a href="/">
-          <button class="nav-button">
-            Home
-          </button>
-        </a>
-        <a href="/projects">
-          <button class="nav-button">
-            Projects
-          </button>
-        </a>
-        <a href="/music">
-          <button class="nav-button">
-            Music
-          </button>
-        </a>
-        <a href="/contact">
-            <button class="nav-button" style="text-decoration: underline; font-style: italic;">
-                Contact
-            </button>
-        </a>
-      </nav>
     </header>
+    <script src="/scripts/nav-slide.js"></script>
+
     <main>
-      <h1 class="contact">Contact</h1>
-      <h2 class="email">daryllavin@gmail.com</h2>
-      <div class="link-rotate">
-        <h2 class="link">
-          <div class="urls">
-            <span>
-              linkedin.com/in <br>
-              github.com <br>
-              instagram.com
-            </span>
-          </div>
-          <div>
-            /daryllavin
-          </div>
-        </h2>
-      </div>
-      <div class="logo-links">
-        <div class="full-logo">
-          <a href="mailto:daryllavin@gmail.com">
-            <button class="logo-button">
-              <img class="gmail-full" src="/img/gmail-full.png">
-            </button>
-          </a>
+      <div class="wrap contact">
+        <div class="page-header">
+          <h1 class="display">Contact</h1>
+          <p class="lead">Email is the best way to reach me, but I'm on these too.</p>
         </div>
-        <div class="full-logo">
-          <a target="_blank" href="https://www.linkedin.com/in/daryllavin">
-            <button class="logo-button">
-              <img class="linkedin-full" src="/img/linkedin-full.png">
-            </button>
-          </a>
-        </div>
-        <div class="full-logo">
-          <a target="_blank" href="https://www.github.com/daryllavin">
-            <button class="logo-button">
-              <img class="github-full" src="/img/github-full.png">
-            </button>
-          </a>
-        </div>
-        <div class="full-logo">
-          <a target="_blank" href="https://www.instagram.com/daryllavin">
-            <button class="logo-button">
-              <img class="instagram-full" src="/img/instagram-full.png">
-            </button>
-          </a>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:daryllavin@gmail.com"><img src="/img/gmail.png" alt=""><span class="contact-label">Email</span><span class="contact-value">daryllavin@gmail.com</span></a>
+          <a class="contact-card" href="https://www.linkedin.com/in/daryllavin" target="_blank" rel="noopener"><img src="/img/linkedin.png" alt=""><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/daryllavin</span></a>
+          <a class="contact-card" href="https://github.com/daryllavin" target="_blank" rel="noopener"><img src="/img/github.png" alt=""><span class="contact-label">GitHub</span><span class="contact-value">github.com/daryllavin</span></a>
+          <a class="contact-card" href="https://www.instagram.com/daryllavin/" target="_blank" rel="noopener"><img src="/img/instagram.png" alt=""><span class="contact-label">Instagram</span><span class="contact-value">@daryllavin</span></a>
         </div>
       </div>
     </main>
-    <footer class="contact-footer">
-      <div class="footer" style="position: fixed; bottom: 0; right:0;">
-        <a href="mailto:daryllavin@gmail.com">
-          <img class="socials-gmail" src="/img/gmail.png">
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/daryllavin">
-          <img class="socials" src="/img/linkedin.png">
-        </a>
-        <a target="_blank" href="https://www.github.com/daryllavin">
-          <img class="socials" src="/img/github.png">
-        </a>
-        <a target="_blank" href="https://www.instagram.com/daryllavin/">
-          <img class="socials" src="/img/instagram.png">
-        </a>
-        <h1 class="footer-name">Daryl Lavin</h1> 
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="footer-name">Daryl Lavin</p>
+        <div class="footer-right">
+          <div class="socials">
+            <a href="mailto:daryllavin@gmail.com" aria-label="Email"><img src="/img/gmail.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/daryllavin" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="/img/linkedin.png" alt=""></a>
+            <a href="https://github.com/daryllavin" target="_blank" rel="noopener" aria-label="GitHub"><img src="/img/github.png" alt=""></a>
+            <a href="https://www.instagram.com/daryllavin/" target="_blank" rel="noopener" aria-label="Instagram"><img src="/img/instagram.png" alt=""></a>
+          </div>
+          <p class="credit">Icons by <a href="https://icons8.com" target="_blank" rel="noopener">Icons8</a></p>
+        </div>
       </div>
     </footer>
   </body>

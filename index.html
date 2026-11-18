@@ -1,161 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Daryl Lavin</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="date=no">
-    <meta name="format-detection" content="address=no">
-    <meta name="format-detection" content="email=no">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/general.css?">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/home-main.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Daryl Lavin</title>
+    <meta name="description" content="Daryl Lavin is an Electrical &amp; Computer Engineering and Trombone Performance student at Carnegie Mellon University.">
+    <link rel="icon" href="/img/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Calligraffitti&family=Comic+Relief:wght@400;700&family=Gochi+Hand&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/home-main.css">
+    <link rel="stylesheet" href="/styles/footer.css">
   </head>
   <body>
-    <header class="header">
-      <div class="left-side">
-        <a href="/">
-          <img class="logo" src="img/logo.png">
-        </a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="wordmark" href="/"><img src="/img/logo-trim.png" alt=""><span>Daryl Lavin</span></a>
+        <nav class="nav" aria-label="Main">
+          <a href="/" aria-current="page">Home<span class="nav-indicator" aria-hidden="true"></span></a>
+          <a href="/projects">Projects</a>
+          <a href="/music">Music</a>
+          <a href="/contact">Contact</a>
+        </nav>
       </div>
-      <div class="middle">
-        <h1 class="nav-name">Daryl Lavin</h1>
-      </div>
-      <nav class="nav">
-        <a href="/">
-          <button class="nav-button" style="text-decoration: underline; font-style: italic;">
-            Home
-          </button>
-        </a>
-        <a href="/projects">
-          <button class="nav-button">
-            Projects
-          </button>
-        </a>
-        <a href="/music">
-          <button class="nav-button">
-            Music
-          </button>
-        </a>
-        <a href="/contact">
-            <button class="nav-button">
-                Contact
-            </button>
-        </a>
-      </nav>
-    </div>
-
     </header>
-  <main>
-      <div class="home-main">
-        <div class="home-img">
-          <img class="headshot" src="img/daryl.jpg">
-          <h1 class="name-mobile">DARYL LAVIN</h1>
-          <div class="rotate-mobile">
-            <span class="window">
-              <span class="programmer">Programmer</span> <span class="researcher">Researcher</span> <span class="musician">Musician</span> <span class="engineer">Engineer</span> <span class="student">Student</span> <span class="builder">Builder</span> <span class="explorer">Explorer</span> <span class="trombonist">Trombonist</span>
-              <span class="programmer">Programmer</span> <span class="researcher">Researcher</span> <span class="musician">Musician</span> <span class="engineer">Engineer</span> <span class="student">Student</span> <span class="builder">Builder</span> <span class="explorer">Explorer</span> <span class="trombonist">Trombonist</span>
-            </span>
-          </div>
-          <div class="links">
-            <a href="mailto:daryllavin@gmail.com">
-              <img class="info-gmail" src="img/gmail.png">
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/daryllavin">
-              <img class="info-linkedin" src="img/linkedin.png">
-            </a>
-            <a target="_blank" href="https://www.github.com/daryllavin">
-              <img class="info-github" src="img/github.png">
-            </a>
-          </div>
-          <div class="info">
-            <div class="loc">
-              <img class="loc-img" src="img/loc.png">
-              <h3 class="location">New Canaan, CT</h3>
-              <img class="plane-img" src="img/plane.png">
-              <h3 class="location">Pittsburgh, PA</h3>
-            </div>
-            <div class="ed">
-              <img class="ed-img" src="img/ed.png">
-              <h3 class="school">Carnegie Mellon University</h3>
-            </div>
-            <div class="maj">
-              <img class="books-img" src="img/books.png">
-              <h3 class="major">Electrical & Computer Engineering + Music</h3>
-            </div>
-            <div class="cal">
-              <img class="cal-img" src="img/calendar.png">
-              <h3 class="calendar">August 2024 - May 2028</h3>
-            </div>
+    <script src="/scripts/nav-slide.js"></script>
 
+    <main>
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-text">
+            <h1 class="display">Daryl Lavin</h1>
+            <p class="lead">
+              Currently studying ECE @ CMU. I also play the trombone. <br>I like operating systems, computer architecture, and machine learning.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="/projects"><span>See my projects</span></a>
+              <a class="btn" href="#about"><span>About me</span></a>
+            </div>
+            <div class="socials hero-socials">
+              <a href="mailto:daryllavin@gmail.com" aria-label="Email"><img src="/img/gmail.png" alt=""></a>
+              <a href="https://www.linkedin.com/in/daryllavin" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="/img/linkedin.png" alt=""></a>
+              <a href="https://github.com/daryllavin" target="_blank" rel="noopener" aria-label="GitHub"><img src="/img/github.png" alt=""></a>
+              <a href="https://www.instagram.com/daryllavin/" target="_blank" rel="noopener" aria-label="Instagram"><img src="/img/instagram.png" alt=""></a>
+            </div>
+          </div>
+          <div class="hero-side">
+            <img class="headshot" src="/img/daryl.jpg" alt="Portrait of Daryl Lavin">
+            <ul class="facts">
+              <li>
+                <img src="/img/loc.png" alt="">
+                <span class="route"><span>New Canaan, CT</span><img class="plane" src="/img/plane.png" alt="to"><span>Pittsburgh, PA</span></span>
+              </li>
+              <li><img src="/img/ed.png" alt=""><span>Carnegie Mellon University</span></li>
+              <li><img src="/img/books.png" alt=""><span>Electrical &amp; Computer Engineering + Trombone Performance</span></li>
+              <li><img src="/img/calendar.png" alt=""><span>August 2024 – May 2028</span></li>
+            </ul>
           </div>
         </div>
-        <div class="about">
-          <h1 class="name">DARYL LAVIN</h1>
-          <div class="rotate">
-            <span class="window">
-              <span class="programmer">Programmer</span> <span class="researcher">Researcher</span> <span class="musician">Musician</span> <span class="engineer">Engineer</span> <span class="student">Student</span> <span class="builder">Builder</span> <span class="explorer">Explorer</span> <span class="trombonist">Trombonist</span>
-              <span class="programmer">Programmer</span> <span class="researcher">Researcher</span> <span class="musician">Musician</span> <span class="engineer">Engineer</span> <span class="student">Student</span> <span class="builder">Builder</span> <span class="explorer">Explorer</span> <span class="trombonist">Trombonist</span>
-            </span>
+      </section>
+
+      <section class="section" id="about">
+        <div class="wrap">
+          <h2 class="section-title">About</h2>
+          <div class="about-body">
+            <p>I love to learn new things and understand the world around us. I have taken coursework from cloud computing and machine learning down through operating systems and computer architecture, all the way to analog and microelectronic circuits. I have been especially interested by computer architecture, systems programming, and machine learning.</p>
+            <p>In the past, I've interned at Aven Financial, a $2.2 billion fintech startup, and at the Yale Biomedical Imaging Institute. Right now I'm a teaching assistant for 15-440/15-640: Distributed Systems, and before that I was a TA for 18-213/18-613: Computer Systems, CMU's core systems course. Some of the things I've built are on the <a href="/projects">projects</a> page.</p>
+            <p>Outside of engineering, I play trombone. I started in fifth grade and now spend 10–20 hours a week on music. I'm pursuing an additional major in Trombone Performance at CMU, where I study with the principal trombonist of the Pittsburgh Symphony, and I perform in ensembles at CMU and back home in Connecticut. There's more on the <a href="/music">music</a> page.</p>
+            <p>Outside of school, I have played hockey since I was six, love to go for long walks, travel, or play the occasional game of chess.</p>
           </div>
-          <p class="intro">
-            Hey! I'm Daryl, a student at Carnegie Mellon University studying Electrical and Computer Engineering with an additional major in Engineering & Arts (Trombone Performance). I created this portfolio website to teach myself HTML/CSS/JS and to showcase some of the cool projects I've worked on and experiences I've had. Have a look around!
-          </p>
-          <button class="scroll-down" onClick="document.getElementById('abt').scrollIntoView({behavior: 'smooth'});">
-            <h1 class="abt-button">About Me!</h1>
-            <img class="down" src="img/down.png">
-          </button>
         </div>
-      </div>
-      <div class="about-me">
-        <h1 class="abt-title" id="abt">About Me</h1>
-        <p class="intro-mobile">
-          Hey! I'm Daryl, a student at Carnegie Mellon University studying Electrical and Computer Engineering with an additional major in Engineering & Arts (Trombone Performance). I created this portfolio website to teach myself HTML/CSS/JS and to showcase some of the cool projects I've worked on and experiences I've had. Have a look around!
-        </p>
-        <p class="bio"> 
-            I am passionate about learning and gaining new experiences in all kinds of fields! I'm an avid explorer looking to understand and appreciate the world around us -- whether that be humans, computers, nature, or the laws of the universe that keep the world running. I'm particularly excited about computer science/engineering, computer architecture, systems programming, and machine learning, and would love working in any of these areas. I am currently a teaching assistant for CMU's core course in software systems for both CS and ECE Majors (18-213/18-613: Computer Systems), where I teach concepts including x86 assembly, computer architecture, caching, memory management, concurrency, and network programming in weekly small group recitation settings. I help students through building practical labs including a cache simulator, dynamic memory allocator, Unix shell, and web proxy using C. I have also completed a wide range of additional coursework across the tech stack including distributed systems, data structures and algorithms, and analog circuits. I love finding interdisciplinary connections between fields, evidenced by my dual majors, multidisciplinary research endeavors, and passion for exploration. Check out the projects tab to see some fun things I've worked on!
-          </p>
-          <a href="/projects">
-            <button class="link-button">
-              <h1>Projects</h1>
-            </button>
-          </a>
-          <p class="bio"> 
-            In addition to my academic pursuits, I am a passionate <a href="music.html">trombonist</a>, dedicating 10-20 hours/week to my musical pursuits. I've been playing the trombone since fifth grade and it has become a large part of my life. I play in various ensembles around Connecticut, and am also studying music seriously at CMU. See the music tab to learn more about my musical experiences!
-          </p>
-          <a href="/music">
-            <button class="link-button">
-              <h1>Music</h1>
-            </button>
-          </a>
-          <p class="bio">
-            Outside of school, I love to explore the outdoors and visit new places. I have played ice hockey since age 6 and enjoy skating to this day. As a former competetive chess player, I am also still an avid online player whenever I have the time. Additionally, I speak both Spanish and Mandarin Chinese at an intermediate level. Feel free to reach out!
-          </p>
-      </div>
+      </section>
     </main>
-    <footer>
-        <div class="footer">
-          <a href="mailto:daryllavin@gmail.com">
-            <img class="socials-gmail" src="img/gmail.png">
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/daryllavin">
-            <img class="socials" src="img/linkedin.png">
-          </a>
-          <a target="_blank" href="https://www.github.com/daryllavin">
-            <img class="socials" src="img/github.png">
-          </a>
-          <a target="_blank" href="https://www.instagram.com/daryllavin/">
-            <img class="socials" src="img/instagram.png">
-          </a>
-          <h1 class="footer-name">Daryl Lavin</h1> 
-          <h1 class="separate">|</h1>
-          <h2 class="credit">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></h2>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="footer-name">Daryl Lavin</p>
+        <div class="footer-right">
+          <div class="socials">
+            <a href="mailto:daryllavin@gmail.com" aria-label="Email"><img src="/img/gmail.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/daryllavin" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="/img/linkedin.png" alt=""></a>
+            <a href="https://github.com/daryllavin" target="_blank" rel="noopener" aria-label="GitHub"><img src="/img/github.png" alt=""></a>
+            <a href="https://www.instagram.com/daryllavin/" target="_blank" rel="noopener" aria-label="Instagram"><img src="/img/instagram.png" alt=""></a>
+          </div>
+          <p class="credit">Icons by <a href="https://icons8.com" target="_blank" rel="noopener">Icons8</a></p>
         </div>
-      </footer>
+      </div>
+    </footer>
   </body>
 </html>

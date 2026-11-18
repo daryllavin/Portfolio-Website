@@ -1,232 +1,53 @@
-.title {
-    display: block;
-    font-family: Roboto;
-    text-align: center;
-    font-size: clamp(1.5rem, 5vw, 4rem);
-    text-decoration: underline;
-    margin-bottom: 5vh;
+.project {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  align-items: start;
+  gap: 48px;
+  padding: 48px 0;
+  border-top: 1px solid var(--rule);
 }
 
-.project-box-left,
-.project-box-right {
-    background-color: rgb(235, 230, 245);
-    margin: 0 5%;
-    border-radius: 15px;
-    min-height: 300px;
-    position: relative;
-    margin-bottom: 2rem;
-    display: grid;
-    align-items: center;
-    padding: 2%;
+.project-compact {
+  grid-template-columns: 1fr;
 }
 
-.project-box-left {
-    grid-template-columns: 2fr 3fr;
-    column-gap: 4rem;
+.project-media {
+  padding-right: 6px;
 }
 
-.project-box-right {
-    grid-template-columns: 3fr 2fr;
-    padding-left: 4%;
-    column-gap: 4rem;
+/* Size the frame to the image itself so the border hugs it */
+.project-media img {
+  width: auto;
+  max-width: 100%;
+  max-height: 340px;
+  background: #fff;
 }
 
-@media (max-width: 768px) {
-  .project-box-left,
-  .project-box-right {
+.project-media a {
+  display: block;
+}
+
+.project-body h2 {
+  margin-bottom: 14px;
+  font-size: 1.6rem;
+}
+
+.project-body p {
+  color: var(--text-muted);
+}
+
+.project-body .btn-row {
+  margin-top: 20px;
+}
+
+@media (max-width: 860px) {
+  .project {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    gap: 24px;
+    padding: 36px 0;
   }
-}
 
-.project-box-left img,
-.project-box-right img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 30px;
-    margin: auto;
-    position: static;
-}
-
-.abt-dream,
-.abt-lidar,
-.abt-glove,
-.abt-bias,
-.abt-port {
-    text-align: center;
-}
-
-.proj-title {
-    text-decoration: underline;
-    font-size: 30px;
-}
-
-.proj-button-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.proj-button {
-    box-sizing: content-box;
-    width: 250px;
-    height: 70px;
-    background-color: rgb(220, 212, 235);
-    border-radius: 20px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    margin-top: 18px;
-}
-
-.proj-button-pdf {
-    width: 30%;
-    height: auto;
-}
-
-.proj-button:hover {
-    border: 2px solid black;
-    box-shadow: 5px 5px 5px rgba(1,1,1,1);
-    cursor: pointer;
-}
-
-.proj-button:active {
-    background-color: rgb(163, 145, 197);
-}
-
-.proj-button-ieee {
-    width: 70%;
-}
-
-.slides-img {
-    width: 100%;
-    text-align: center;
-}
-
-.description {
-    width: 100%;
-    font-size: 18px;
-}
-
-.lidar-img {
-    width: 90%
-}
-
-.right-img-div {
-    margin-top: 5%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.proj-button-yt {
-    width: 75%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-
-.homepage {
-    font-size: 38px;
-}
-
-.port-img-mobile,
-.bias-img-mobile,
-.glove-img-mobile,
-.dream-img-mobile,
-.lidar-img-mobile {
-    display: none;
-}
-
-@media (max-width: 480px) {
-    .title {
-        font-size: 50px;
-    }
-
-    .proj-title {
-        font-size: 20px;
-        margin: 0;
-        margin-bottom: 10px;
-    }
-
-    .description {
-        font-size: 12px;
-        margin-top: 10px;
-    }
-
-    .project-box-left,
-    .project-box-right {
-        grid-template-columns: 1fr;
-        padding: 5%;
-    }
-
-    .dream-img,
-    .lidar-img,
-    .glove-img,
-    .bias-img,
-    .port-img {
-        position: static;
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .proj-button-div {
-        gap: 1rem;
-    }
-
-    .proj-button {
-        width: 120px;
-        margin: 10px auto;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .report {
-        font-size: 10px;
-    }
-
-    .homepage {
-        font-size: 20px;
-    }
-
-    .port-img,
-    .bias-img,
-    .glove-img,
-    .dream-img,
-    .lidar-img {
-        display: none;
-    }
-
-    .lidar-img-mobile {
-        display: block;
-        width: 200px;
-    }
-
-    .dream-img-mobile {
-        display: block;
-        height: 130px;
-    }
-
-    .glove-img-mobile {
-        display: block;
-        width: 250px;
-    }
-
-    .bias-img-mobile {
-        display: block;
-    }
-
-    .port-img-mobile {
-        display: block;
-        width: 150px;
-        margin: 0;
-    }
-
-    .proj-button-yt {
-        padding: -0;
-        width: 100%;
-    }
+  .project-media img {
+    max-height: 260px;
+  }
 }
