@@ -30,30 +30,27 @@
   background: var(--tint);
 }
 
-/* Easter egg: clicking the photo cycles through more photos.
+/* Easter egg: clicking the card cycles through more photos.
    scripts/photo-cycle.js moves .is-active to the next image. */
 .photo {
   position: relative;
   display: grid;
   overflow: hidden;
-  cursor: pointer;
-}
-
-.photo:focus-visible {
-  outline-offset: -4px;
 }
 
 /* The whole card lifts and presses in like the buttons */
 .hero-side {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
-.hero-side:has(.photo:hover) {
+.hero-side:hover {
   transform: translate(-2px, -2px);
   box-shadow: 8px 8px 0 var(--accent-dark);
 }
 
-.hero-side:has(.photo:active) {
+.hero-side:active {
   transform: translate(4px, 4px);
   box-shadow: 0 0 0 var(--accent-dark);
 }

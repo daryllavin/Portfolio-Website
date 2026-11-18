@@ -1,7 +1,7 @@
 (function () {
-  var photo = document.querySelector(".photo");
-  if (!photo) return;
-  var images = photo.querySelectorAll(".headshot");
+  var card = document.querySelector(".hero-side");
+  if (!card) return;
+  var images = card.querySelectorAll(".headshot");
   var current = 0;
 
   function next() {
@@ -10,8 +10,8 @@
     images[current].classList.add("is-active");
   }
 
-  photo.addEventListener("click", next);
-  photo.addEventListener("keydown", function (e) {
+  card.addEventListener("click", next);
+  card.addEventListener("keydown", function (e) {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       next();

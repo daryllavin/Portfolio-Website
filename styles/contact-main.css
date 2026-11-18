@@ -69,6 +69,10 @@
   display: flex;
 }
 
+.address > span {
+  flex-shrink: 0;
+}
+
 .urls {
   height: 1.6em;
   overflow: hidden;
@@ -106,6 +110,13 @@
 @media (max-width: 600px) {
   .link-rotate {
     font-size: 1.1rem;
+  }
+}
+
+/* Small phones: shrink a bit more so the longest address fits */
+@media (max-width: 370px) {
+  .link-rotate {
+    font-size: 0.95rem;
   }
 }
 
