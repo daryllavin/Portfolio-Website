@@ -51,3 +51,37 @@
     max-height: 260px;
   }
 }
+
+/* Jump links under the page title, in the same raised style as the buttons */
+.project-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.project-jump a {
+  padding: 7px 14px;
+  border: 2px solid var(--accent-dark);
+  border-radius: 10px;
+  background: var(--tint);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+  box-shadow: 3px 3px 0 var(--accent-dark);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+}
+
+.project-jump a:hover {
+  color: var(--text);
+  background: #fff;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--accent-dark);
+}
+
+.project-jump a:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 var(--accent-dark);
+}

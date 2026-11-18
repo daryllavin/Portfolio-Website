@@ -62,17 +62,53 @@
   list-style: none;
 }
 
+/* Vertical line down the middle with a dot for each year */
 .timeline li {
+  position: relative;
   display: grid;
   grid-template-columns: 64px 1fr;
-  gap: 16px;
-  padding: 14px 0;
-  border-top: 1px solid var(--rule);
+  column-gap: 44px;
+  padding-bottom: 26px;
 }
 
-.timeline li:first-child {
-  border-top: none;
-  padding-top: 0;
+.timeline li:last-child {
+  padding-bottom: 0;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 85px;
+  width: 2px;
+  background: var(--accent-dark);
+}
+
+.timeline li:first-child::before {
+  top: 14px;
+}
+
+.timeline li:last-child::before {
+  bottom: auto;
+  height: 14px;
+}
+
+.timeline li::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 79px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--accent-dark);
+  border-radius: 50%;
+  background: var(--tint);
+}
+
+/* Most recent year gets a filled dot */
+.timeline li:first-child::after {
+  background: var(--accent);
 }
 
 .timeline .year {
